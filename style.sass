@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Walter+Turncoat&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Walter+Turncoat&display=swap')
+
+@keyframes animation
+
+    0%
+        transform: translateY(0rem)
+        transform: translateX(0rem)
+    25%
+        transform: translateY(4rem)
+        transform: translateX(2rem)
+    50%
+        transform: translateX(-2rem)
+        transform: translateY(-4rem)
+    75%
+        transform: translateY(-4rem)
+        transform: translateX(-4rem)
+    100%
+        transform: transalteY(6rem)
+        transform: transalteX(4rem)
+        
+
+*
+    box-sizing: border-box     
+
+$blue: #007bff
+$indigo: #6610f2
+$purple: #6f42c1
+$pink: #e83e8c
+$button: #eb2b63
+$red: #dc3545
+$orange: #fd7e14
+$yellow: #ffc107
+$green: #28a745
+$teal: #20c997
+$cyan: #17a2b8
+$white: #fff
+$gray: #6c757d
+$gray-dark: #343a40
+$primary: #007bff
+$secondary: #6c757d
+$success: #28a745
+$info: #17a2b8
+$warning: #ffc107
+$danger: #dc3545
+$light: #f8f9fa
+$dark: #343a40
+
+*
+    font-family: 'Montserrat', sans-serif
+    box-sizing: border-box
+    letter-spacing: 1px
+
+body
+    margin: 0
+    padding: 0
+    background-image: url(./img/bg.jpg.webp)
+    background-repeat: no-repeat
+
+.nb
+    height: 100px
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 50px
+    .nb-left
+        margin-top: 15px
+        img
+            padding-left: 50px
+    .nb-center
+        display: flex
+        flex-grow: 1
+        justify-content: end
+        gap: 50px
+        margin-top: 15px
+        a
+            text-decoration: none
+            color: $white
+            font-size: 16px
+            font-weight: 400
+        a:hover
+            color: $pink
+            transition: 800ms
+    .nb-right
+        margin-right: 70px
+        margin-top: 15px
+        width: 120px
+        button
+            background-color: $button
+            border-style: none
+            border-radius: 14px
+            height: 40px
+            width: 140px
+            color: $white
+            font-size: 14px
+            font-weight: 500
+            cursor: pointer
+
+.main-wrapper
+    width: 60%
+    max-width: 1000px
+    margin: 90px auto
+    display: flex
+    .m-w-left
+        color: $white
+        display: flex
+        flex-direction: column
+        h1
+            word-wrap: break-word
+            font-size: 90px
+            margin-bottom: 0
+        .m-w-description
+            p
+                line-height: 28px
+        .m-w-call
+            margin-top: 20px
+            button
+                background-color: $button
+                border-style: none
+                border-radius: 14px
+                height: 50px
+                width: 180px
+                color: $white
+                font-size: 14px
+                font-weight: 500
+                cursor: pointer
+    img
+        padding: 100px
+        transition: trasform 800ms
+        animation-name: animation
+        animation-duration: 4s
+        animation-iteration-count: infinite
+
+
+.info-wrapper 
+    display: flex
+    flex-direction: column
+    width: 60%
+    max-width: 1000px
+    margin: auto
+    .info-text
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        gap: 8px
+        img
+            width: 29px
+            height: auto
+        h2
+            font-size: 48px
+            font-weight: 700
+            color: #1c1c1c
+            margin: 0 0 20px 0
+        p
+           color: #8e8e8e
+           font-size: 12px
+           margin-bottom: 2px
+           margin-top: 2px
+           text-transform: uppercase
+    .info-card
+        display: flex
+        flex-direction: column
+        width: 100%
+        max-width: 1000pxc
+        margin: 80px auto
+        align-items: center
+        gap: 50px
+        .info-card-up
+            display: flex
+            align-content: baseline
+            justify-content: baseline
+            gap: 50px
+            .card
+                display: flex
+                flex-direction: column
+                align-items: center
+                width: 100%
+                .card-img
+                    background-color: #eb2b63
+                    border-radius: 50%
+                    width: 80px
+                    height: 80px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    img
+                        display: block
+                        width: 40px
+                .card-content
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+                    h3
+                        font-size: 24px
+                        font-weight: 500
+                    p
+                        color: #585858
+                        line-height: 30px
+                        margin: 16px 
+                        text-justify: center
+             
+#bigger 
+    -webkit-transform-origin: bottom center
+    -ms-transform-origin: bottom center
+    transform-origin: bottom center
+    -webkit-transform: scale(1.65)
+    -ms-transform: scale(1.65)
+    transform: scale(1.65)
